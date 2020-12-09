@@ -119,8 +119,7 @@
                                 <div class="line-separator"></div>
                                 <h4>Click here to download the <br>Android App</h4>
 
-                                <a href="#" title="Download"
-                                    class="btn btn-gfort wave-effect">Download</a>
+                                <a href="#" title="Download" class="btn btn-gfort wave-effect">Download</a>
 
                             </div>
                         </div>
@@ -208,8 +207,7 @@
                         <div class="col-lg-8 col-md-12 col-sm-12 button-block">
 
                             <div class="button-block-container md-text-center">
-                                <a href="#" title="Purchase"
-                                class="btn btn-gfort wave-effect">Download</a>
+                                <a href="#" title="Purchase" class="btn btn-gfort wave-effect">Download</a>
                             </div>
                         </div>
                     </div>
@@ -1002,7 +1000,8 @@
                                     <ul>
                                         <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="https://github.com/vipular" title="Github"><i class="fa fa-github"></i></a></li>
+                                        <li><a href="https://github.com/vipular" title="Github"><i
+                                                    class="fa fa-github"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1100,73 +1099,86 @@
                             <div class="title-block-container text-center">
 
                                 <h2>DOWNLOAD FROM</h2>
-                                <style>
-                                    .accordion {
-                                      background-color: #eee;
-                                      color: #444;
-                                      cursor: pointer;
-                                      padding: 18px;
-                                      width: 100%;
-                                      border: none;
-                                      text-align: left;
-                                      outline: none;
-                                      font-size: 15px;
-                                      transition: 0.4s;
-                                    }
+                                <div class="line-separator"></div>
+                            </div>
+                            <style>
+                                .accordion {
+                                    background-color: rgb(199, 247, 159);
+                                    color: #444;
+                                    cursor: pointer;
+                                    padding: 18px;
+                                    width: 100%;
+                                    border: none;
+                                    text-align: left;
+                                    outline: none;
+                                    font-size: 15px;
+                                    transition: 0.4s;
+                                }
+
+                                .active, .accordion:hover {
+                                    background-color: rgb(139, 247, 89);
+                                }
+
+                                .accordian:after {
+                                    content: '\02795';
+                                    color: rgb(83, 172, 255);
+                                    font-size: 13px;
+                                    font-weight: bold;
+                                    float: right;
+                                    margin-left: 5px;
+                                }
+
+                                .active:after {
+                                    content: "\2796";
+                                }
+
+                                .panel {
+                                    padding: 0 18px;
+                                    background-color: rgb(255, 255, 255);
+                                    overflow: hidden;
+                                    max-height: 0;
                                     
-                                    .active, .accordion:hover {
-                                      background-color: #ccc; 
-                                    }
-                                    
-                                    .panel {
-                                      padding: 0 18px;
-                                      display: none;
-                                      background-color: white;
-                                      overflow: hidden;
-                                    }
-                                    </style>
-                                    
-                                    <body>
-                                    
-                                    <h2>Accordion</h2>
-                                    
-                                    <button class="accordion">Section 1</button>
-                                    <div class="panel">
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    </div>
-                                    
-                                    <button class="accordion">Section 2</button>
-                                    <div class="panel">
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    </div>
-                                    
-                                    <button class="accordion">Section 3</button>
-                                    <div class="panel">
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    </div>
-                                    
-                                    <script>
+                                    transition: max-height 0.2s ease-out;
+                                }
+                            </style>
+                            <body>
+                                <button class="accordion">Version 1.0.0</button>
+                                <div class="panel" >
+                                    <h4>Version 1.0.0</h4>
+                                    <p>download</p>
+                                    <h4>New Features</h4>
+                                    <p>new</p>
+                                    <h4>Bug Fixes</h4>
+                                    <p>problems fixes</p>
+                                    <button class="btn"><i class="fa fa-download"></i> Download</button>
+                                </div>
+                                <button class="accordion">Version 1.0.1</button>
+                                <div class="panel">
+                                    <h4>Version 1.0.1</h4>
+                                    <p>download</p>
+                                    <h4>New Features</h4>
+                                    <p>new</p>
+                                    <h4>Bug Fixes</h4>
+                                    <p>problems fixes</p>
+                                    <a href="#" title="Download" class="fa fa-download">Download</a>
+                                </div>
+                                <script>
                                     var acc = document.getElementsByClassName("accordion");
                                     var i;
-                                    
+
                                     for (i = 0; i < acc.length; i++) {
-                                      acc[i].addEventListener("click", function() {
-                                        this.classList.toggle("active");
-                                        var panel = this.nextElementSibling;
-                                        if (panel.style.display === "block") {
-                                          panel.style.display = "none";
-                                        } else {
-                                          panel.style.display = "block";
-                                        }
-                                      });
+                                        acc[i].addEventListener("click", function () {
+                                            this.classList.toggle("active");
+                                            var panel = this.nextElementSibling;
+                                            if (panel.style.maxHeight) {
+                                                panel.style.maxHeight = null;
+                                            } else {
+                                                panel.style.maxHeight = panel.scrollHeight + "px";
+                                            }
+                                        });
                                     }
-                                    </script>
-
-                                <div class="line-separator"></div>
-
-                                <a href="#" title="Download"
-                                 class="btn btn-gfort wave-effect">DOWNLOAD</a>
-                            </div>
+                                </script>
+                            </body>
                         </div>
                     </div>
                 </div>
